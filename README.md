@@ -1,1 +1,1 @@
-# django-shuffle
+# django-admin-shuffle
