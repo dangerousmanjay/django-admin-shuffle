@@ -17,6 +17,8 @@ Add "admin_shuffle" to your INSTALLED_APPS setting like this::
         'admin_shuffle',
     ]
 
+And add mixin to your admin model like this
+
 .. code-block:: python
 
     from admin_shuffle import AdminShuffleMixin
