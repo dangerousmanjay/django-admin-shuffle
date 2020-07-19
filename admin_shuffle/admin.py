@@ -4,6 +4,8 @@ from django.contrib.admin.views.main import ChangeList, ORDER_VAR
 from django.contrib.admin.options import csrf_protect_m
 
 SHUFFLE_QS_VALUE = getattr(settings, 'SHUFFLE_QS_VALUE', 'SHUFFLE')
+SHUFFLE_LABEL = getattr(settings, 'SHUFFLE_LABEL', 'SHUFFLE')
+
 
 class ShuffleChangeList(ChangeList):
 
@@ -31,6 +33,7 @@ class AdminShuffleMixin(object):
         extra_context.update({
             'original_change_list_template': self.original_change_list_template,
             'shuffle_qs_value': SHUFFLE_QS_VALUE,
+            'shuffle_label': SHUFFLE_LABEL,
             'order_var': ORDER_VAR,
         })
         return super(AdminShuffleMixin, self).changelist_view(request, extra_context=extra_context)

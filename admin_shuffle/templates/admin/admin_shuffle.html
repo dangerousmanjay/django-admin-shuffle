@@ -4,7 +4,8 @@
 {% block object-tools-items %}
     <li>
         <form action="" method="get">
-            <input type="submit" name={{ order_var }} value={{ shuffle_qs_value }} readonly>
+            <input type="hidden" name={{ order_var }} value={{ shuffle_qs_value }} readonly>
+            <input type="submit" value={{ shuffle_label }} > 
         </form>
     </li>
     {{ block.super }}
