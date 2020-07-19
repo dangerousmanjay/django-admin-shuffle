@@ -10,7 +10,7 @@ This package simply shuffles list of objects on admin changelist view.
 Quick start
 -----------
 
-Add "cxm" to your INSTALLED_APPS setting like this::
+Add "admin_shuffle" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
