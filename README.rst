@@ -1,4 +1,5 @@
-# django-admin-shuffle
+Django Admin Shuffle
+=======================
 
 
 What it does
@@ -6,17 +7,22 @@ What it does
 
 This package simply shuffles list of objects on admin changelist view.
 
+Integration Example
+--------------------
 
-Quick start
------------
-
-Add "cxm" to your INSTALLED_APPS setting like this::
+Add "admin_shuffle" to your INSTALLED_APPS setting like this::
 
     INSTALLED_APPS = [
         ...
         'admin_shuffle',
     ]
 
+.. code-block:: python
+
+    from admin_shuffle import AdminShuffleMixin
+
+    class ExampleAdmin(AdminShuffleMixin, models.ModelAdmin):
+        pass
 
 Settings
 ---------------------
