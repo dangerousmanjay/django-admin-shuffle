@@ -2,7 +2,7 @@
 
 
 What it does
------------
+-------------
 
 This package simply shuffles list of objects on admin changelist view.
 
