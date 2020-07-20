@@ -1,0 +1,12 @@
+{% extends original_change_list_template %}
+{% load i18n static admin_modify %}
+
+{% block object-tools-items %}
+    <li>
+        <form action="" method="get">
+            <input type="hidden" name={{ order_var }} value={{ shuffle_qs_value }} readonly>
+            <input type="submit" value={{ shuffle_label }} > 
+        </form>
+    </li>
+    {{ block.super }}
+{% endblock object-tools-items %}
