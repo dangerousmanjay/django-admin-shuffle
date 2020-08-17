@@ -1,11 +1,24 @@
 django-admin-shuffle
 #####################
 
+.. image:: https://travis-ci.org/ojayyezzir/django-admin-shuffle.svg?branch=develop
+    :target: https://travis-ci.org/ojayyezzir/django-admin-shuffle
+.. image:: https://codecov.io/gh/ojayyezzir/django-admin-shuffle/branch/develop/graph/badge.svg
+  :target: https://codecov.io/gh/ojayyezzir/django-admin-shuffle
+
 **django-admin-shuffle** simply shuffles objects on admin changelist view.
 
-Supports `Django`_ 2.1+ and 3.0+.
+This app supports the following combinations of Django and Python:
 
-![](example.gif)
+==========  =======================
+  Django      Python
+==========  =======================
+2.1         3.6, 3.7, 3.8
+2.2         3.6, 3.7, 3.8
+3.0         3.6, 3.7, 3.8
+==========  =======================
+
+![](https://raw.githubusercontent.com/ojayyezzir/django-admin-shuffle/9c8f75c043e185d4f8ee7f7ba50e775dca3b1b5b/example.gif)
 
 Installation
 =====================
