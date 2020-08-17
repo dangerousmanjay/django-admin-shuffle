@@ -16,14 +16,14 @@ class ShuffleChangeList(ChangeList):
 
 
 class AdminShuffleMixin(object):
-    shuffle_change_list_template = "admin/admin_shuffle.html"
+    shuffle_change_list_template = 'admin_shuffle/change_list.html'
 
     def __init__(self, *args, **kwargs):
         super(AdminShuffleMixin, self).__init__(*args, **kwargs)
         if self.change_list_template:
             self.original_change_list_template = self.change_list_template
         else:
-            self.original_change_list_template = "admin/change_list.html"
+            self.original_change_list_template = 'admin/change_list.html'
         self.change_list_template = self.shuffle_change_list_template
 
     @csrf_protect_m
