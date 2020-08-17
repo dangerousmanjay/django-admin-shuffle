@@ -1,0 +1,9 @@
+language: python
+cache: pip
+python:
+- 3.6
+- 3.7
+- 3.8
+install: pip install tox-travis codecov
+script: tox -- --cov --cov-append
+after_success: codecov

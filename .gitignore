@@ -130,7 +130,4 @@ dmypy.json
 
 .vscode/
 
-example/
-example_app/
-
 .DS_Store
