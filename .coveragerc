@@ -1,2 +1,2 @@
 [run]
-source=admin_shuffle
+include = admin_shuffle/*.py
