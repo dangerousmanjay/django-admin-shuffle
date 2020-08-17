@@ -1,0 +1,2 @@
+[run]
+include = admin_shuffle/*.py

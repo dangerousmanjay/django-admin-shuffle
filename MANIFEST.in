@@ -1,2 +1,2 @@
 include *.rst
-recursive-include admin_shuffle/templates *
+graft admin_shuffle
