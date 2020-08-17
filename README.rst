@@ -18,7 +18,7 @@ This app supports the following combinations of Django and Python:
 3.0         3.6, 3.7, 3.8
 ==========  =======================
 
-![](https://raw.githubusercontent.com/ojayyezzir/django-admin-shuffle/9c8f75c043e185d4f8ee7f7ba50e775dca3b1b5b/example.gif)
+.. image:: https://raw.githubusercontent.com/ojayyezzir/django-admin-shuffle/9c8f75c043e185d4f8ee7f7ba50e775dca3b1b5b/example.gif
 
 Installation
 =====================
