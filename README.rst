@@ -1,6 +1,10 @@
 django-admin-shuffle
 #####################
 
+.. image:: https://img.shields.io/pypi/v/django-admin-shuffle.svg?style=flat
+    :target: https://pypi.org/project/django-admin-shuffle/
+.. image:: https://img.shields.io/pypi/pyversions/django-admin-shuffle.svg
+   :target: https://pypi.org/project/django-admin-shuffle/
 .. image:: https://travis-ci.org/ojayyezzir/django-admin-shuffle.svg?branch=develop
     :target: https://travis-ci.org/ojayyezzir/django-admin-shuffle
 .. image:: https://codecov.io/gh/ojayyezzir/django-admin-shuffle/branch/develop/graph/badge.svg
