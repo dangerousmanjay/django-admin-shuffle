@@ -27,7 +27,7 @@ class AdminTests(TestCase):
         for x in range(100):
             articles.append(Article(
                 title=x,
-                content=100-x,
+                content=x,
             ))
         Article.objects.bulk_create(articles)
 
