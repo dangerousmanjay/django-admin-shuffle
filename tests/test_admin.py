@@ -43,7 +43,7 @@ class AdminTests(TestCase):
         request = self.factory.get('/admin/tests/article/')
         request.user = MockSuperUser()
         
-        self.assertEqual(self.admin.original_change_list_template, 'tests/change_list.html')
+        self.assertEqual(self.admin.super_change_list_template, 'tests/change_list.html')
         self.assertEqual(self.admin.change_list_template, 'admin_shuffle/change_list.html')
         self.assertIsNotNone(self.admin.changelist_view(request))
 
