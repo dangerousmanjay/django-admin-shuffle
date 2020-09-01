@@ -1,10 +1,23 @@
 django-admin-shuffle
 #####################
 
+.. image:: https://img.shields.io/github/license/ojayyezzir/django-admin-shuffle
+   :target: https://github.com/ojayyezzir/django-admin-shuffle
+   :alt: GitHub
 .. image:: https://travis-ci.org/ojayyezzir/django-admin-shuffle.svg?branch=develop
-    :target: https://travis-ci.org/ojayyezzir/django-admin-shuffle
+   :target: https://travis-ci.org/ojayyezzir/django-admin-shuffle
 .. image:: https://codecov.io/gh/ojayyezzir/django-admin-shuffle/branch/develop/graph/badge.svg
-  :target: https://codecov.io/gh/ojayyezzir/django-admin-shuffle
+   :target: https://codecov.io/gh/ojayyezzir/django-admin-shuffle
+.. image:: https://img.shields.io/pypi/v/django-admin-shuffle.svg
+   :target: https://pypi.org/project/django-admin-shuffle/
+.. image:: https://img.shields.io/pypi/pyversions/django-admin-shuffle.svg
+   :target: https://pypi.org/project/django-admin-shuffle/
+.. image:: https://img.shields.io/pypi/status/django-admin-shuffle
+   :target: https://pypi.org/project/django-admin-shuffle/
+   :alt: PyPI - Status
+.. image:: https://img.shields.io/pypi/dm/django-admin-shuffle
+   :target: https://pypi.org/project/django-admin-shuffle/
+   :alt: PyPI - Downloads
 
 **django-admin-shuffle** simply shuffles objects on admin changelist view.
 

@@ -27,7 +27,7 @@ class AdminTests(TestCase):
         for x in range(100):
             articles.append(Article(
                 title=x,
-                content=100-x,
+                content=x,
             ))
         Article.objects.bulk_create(articles)
 
@@ -43,7 +43,7 @@ class AdminTests(TestCase):
         request = self.factory.get('/admin/tests/article/')
         request.user = MockSuperUser()
         
-        self.assertEqual(self.admin.original_change_list_template, 'tests/change_list.html')
+        self.assertEqual(self.admin.super_change_list_template, 'tests/change_list.html')
         self.assertEqual(self.admin.change_list_template, 'admin_shuffle/change_list.html')
         self.assertIsNotNone(self.admin.changelist_view(request))
 
