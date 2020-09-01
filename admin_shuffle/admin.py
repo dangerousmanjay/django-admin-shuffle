@@ -26,15 +26,19 @@ class AdminShuffleMixin(object):
             self.super_change_list_template = 'admin/change_list.html'
         self.change_list_template = self.admin_shuffle_change_list_template
 
-    @csrf_protect_m
     def changelist_view(self, request, extra_context=None):
+        request.GET._mutable = True
+        request.GET[ORDER_VAR] = SHUFFLE_QS_VALUE
+        request.GET._mutable = False
+
+        qs = '?' + request.GET.urlencode()
+
         if not extra_context:
             extra_context = {}
         extra_context.update({
             'super_change_list_template': self.super_change_list_template,
-            'shuffle_qs_value': SHUFFLE_QS_VALUE,
+            'shuffle_qs': qs,
             'shuffle_label': SHUFFLE_LABEL,
-            'order_var': ORDER_VAR,
         })
         return super(AdminShuffleMixin, self).changelist_view(request, extra_context=extra_context)
 
