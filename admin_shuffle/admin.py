@@ -27,11 +27,12 @@ class AdminShuffleMixin(object):
         self.change_list_template = self.admin_shuffle_change_list_template
 
     def changelist_view(self, request, extra_context=None):
-        request.GET._mutable = True
-        request.GET[ORDER_VAR] = SHUFFLE_QS_VALUE
-        request.GET._mutable = False
+        data = request.GET.copy()
+        data._mutable = True
+        data[ORDER_VAR] = SHUFFLE_QS_VALUE
+        data._mutable = False
 
-        qs = '?' + request.GET.urlencode()
+        qs = '?' + data.urlencode()
 
         if not extra_context:
             extra_context = {}
